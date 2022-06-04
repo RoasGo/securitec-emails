@@ -7,10 +7,10 @@ const config = Config.get();
 const logger = Logger.getLogger('app');
 
 (async () => {
-   const host = '0.0.0.0';
-   const port = config.service.port;
+  const host = '0.0.0.0';
+  const port = config.service.port;
 
-   app.listen(port, host, () => {
-      logger.info(`<${artifactInfo.name}> is listening on ${host}:${port}`);
-   });
+  app.listen(port, host, () => {
+    logger.info(`<${artifactInfo.name}> is listening on ${host}:${port}`);
+  });
 })();
