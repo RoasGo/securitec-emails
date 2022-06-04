@@ -10,3 +10,11 @@ export const parseEmailsToSend = (body: IEmailSendReq[]): IEmailSendReq[] =>
       return acc;
     }, {} as IEmailSendReq)
   );
+
+const toMiliSeconds = (time: number) => time * 60 * 1000;
+
+export const delay = (time: number) => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve({}), toMiliSeconds(time));
+  });
+};

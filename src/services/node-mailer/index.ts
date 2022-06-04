@@ -6,7 +6,7 @@ import { to } from '../../helpers/fetch.helper';
 const config = Config.get();
 
 export const sendEmail = (params: IEmailSendReq) => {
-  const { email, message } = params;
+  const { email, message, id } = params;
   const { host, name, pass, port, replyToMail, replyToName, user, cc } = config.service.mail;
 
   const transporter = createTransport({
@@ -26,7 +26,7 @@ export const sendEmail = (params: IEmailSendReq) => {
       from: `"${name}" <${user}>`,
       replyTo: `"${replyToName}" <${replyToMail}>`,
       subject: 'Securitec Test',
-      html: `<p>${message}<p>`,
+      html: `<p>${id} - ${email}:: ${message}<p>`,
       to: email,
     })
   );
