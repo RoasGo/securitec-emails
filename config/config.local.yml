@@ -1,0 +1,7 @@
+default:
+  service:
+    name: sr-emails
+    port: 3000
+    jwt: 
+  metadata:
+    enviroment: local
