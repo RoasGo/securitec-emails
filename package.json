@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "npm start lint",
-    "start": "cd dist && cross-env NODE_ENV=production node ./src/index.js",
+    "start": "cd dist && env NODE_ENV=production node ./src/index.js",
     "dev": "npm start dev",
     "build": "nps build",
     "test": "npm start test",
