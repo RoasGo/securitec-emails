@@ -9,7 +9,7 @@ default:
       user: rooaasg@gmail.com
       pass: 
       port: 587
-      cc: [dev.mail.vibia@gmail.com, mery@multiplica.com]
+      cc: [luis.ventura@securitec.pe, jheyson.portocarrero@securitec.pe]
       replyToMail: noreply@securitec.com
       replyToName: no-reply
   metadata:
