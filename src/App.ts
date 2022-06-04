@@ -62,7 +62,8 @@ class App {
    private setRoutes(): void {
       this.logger.info('Loading api routes...');
       // Set your routes
-      console.log('Acá van las rutas');
+      const api = require('./api');
+      this.express.use('/', api.default);
       this.logger.info('Api routes loaded...');
    }
 }

@@ -13,6 +13,16 @@ export interface IDefault {
          };
       };
       jwt: {};
+      mail: {
+         host: string;
+         name: string;
+         user: string;
+         pass: string;
+         cc: string[];
+         port: number;
+         replyToMail: string;
+         replyToName: string;
+      };
    };
    metadata: {
       enviroment: string;

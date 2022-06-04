@@ -1,7 +1,16 @@
 default:
   service:
     name: sr-emails
-    port: 3000
+    port: 4000
     jwt: 
+    mail: 
+      host: smtp.gmail.com
+      name: SECURITEC ©
+      user: rooaasg@gmail.com
+      pass: 
+      port: 587
+      cc: [dev.mail.vibia@gmail.com, mery@multiplica.com]
+      replyToMail: noreply@securitec.com
+      replyToName: no-reply
   metadata:
     enviroment: local
