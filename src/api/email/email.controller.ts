@@ -14,7 +14,7 @@ export default class EmailsController {
     const parsedEmails = parseEmailsToSend(body);
 
     for (const email of parsedEmails) {
-      delay(email.time);
+      await delay(email.time);
       const [err] = await sendEmail(email);
       if (err) {
         logger.log('error', `An error ocurred:: ${JSON.stringify(err, null, 2)}`);
